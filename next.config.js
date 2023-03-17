@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-}
+  // reactStrictMode: true,
+  // basePath: '/weini/base',
+  // assetPrefix: '/weini/base/',
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
