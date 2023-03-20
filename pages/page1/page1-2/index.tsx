@@ -22,10 +22,10 @@ export default function Page11() {
 
       <button
         onClick={() => {
-          router.push(`page1/page1-1`);
+          router.push(`./page1-1`);
         }}
       >
-        不加环境变量router.push到page1-1
+        router.push到./page1-1
       </button>
     </>
   );
