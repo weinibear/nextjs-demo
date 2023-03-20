@@ -55,6 +55,14 @@ export default function Home() {
         >
           router.push page1-1
         </button>
+
+        <button
+          onClick={() => {
+            router.push(`${process.env.NEXT_PUBLIC_BASE_URL}/page1/page1-2`);
+          }}
+        >
+          router.push page1-2
+        </button>
       </main>
     </>
   );
