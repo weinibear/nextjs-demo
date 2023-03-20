@@ -40,7 +40,7 @@ export default function Home() {
         </button>
         <button
           onClick={() => {
-            router.push(`/page1`);
+            router.push(`${process.env.NEXT_PUBLIC_BASE_URL}/page1`);
           }}
         >
           router.push page1
@@ -48,7 +48,7 @@ export default function Home() {
 
         <button
           onClick={() => {
-            router.push(`/page1/page1-1`);
+            router.push(`${process.env.NEXT_PUBLIC_BASE_URL}/page1/page1-1`);
           }}
         >
           router.push page1-1

@@ -22,7 +22,7 @@ export default function Page2() {
 
       <button
         onClick={() => {
-          router.replace(`/`);
+          router.replace(`${process.env.NEXT_PUBLIC_BASE_URL}/`);
         }}
       >
         router.replace返回到/
