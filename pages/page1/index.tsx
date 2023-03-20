@@ -14,7 +14,7 @@ export default function Page1() {
       <div>page1</div>
       <button
         onClick={() => {
-          router.push(`${process.env.NEXT_PUBLIC_BASE_URL}page2`);
+          router.push(`${process.env.NEXT_PUBLIC_BASE_URL}/page2`);
         }}
       >
         router.push到page2

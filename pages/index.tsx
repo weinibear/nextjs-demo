@@ -30,7 +30,9 @@ export default function Home() {
         >
           window.location.href跳转至page1
         </button>
-        <Link href={`/page1`}>link跳转至page1</Link>
+        <Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/page1`}>
+          link跳转至page1
+        </Link>
         <button
           onClick={() => {
             window.open(`${process.env.NEXT_PUBLIC_BASE_URL}/page1`);
