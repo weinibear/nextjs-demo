@@ -35,17 +35,17 @@ export default function Home() {
         </Link>
         <button
           onClick={() => {
-            window.open(`${process.env.NEXT_PUBLIC_BASE_URL}/page1`);
-          }}
-        >
-          window.open page1
-        </button>
-        <button
-          onClick={() => {
             router.push(`${process.env.NEXT_PUBLIC_BASE_URL}/page1`);
           }}
         >
           router.push page1
+        </button>
+        <button
+          onClick={() => {
+            router.push(`page1`);
+          }}
+        >
+          不加环境变量router.push page1
         </button>
 
         <button
