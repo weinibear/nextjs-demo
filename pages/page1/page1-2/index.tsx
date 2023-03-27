@@ -14,7 +14,7 @@ export default function Page11() {
       <div>page1-2</div>
       <button
         onClick={() => {
-          router.push(`${process.env.NEXT_PUBLIC_BASE_URL}/page1/page1-1`);
+          router.push(`/page1/page1-1`);
         }}
       >
         router.push到page1-1
@@ -22,10 +22,10 @@ export default function Page11() {
 
       <button
         onClick={() => {
-          router.push(`./page1-1`);
+          router.push(`/page1/page1-1`);
         }}
       >
-        router.push到./page1-1
+        router.push到/page1-1
       </button>
     </>
   );

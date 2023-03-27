@@ -30,19 +30,17 @@ export default function Home() {
         >
           window.location.href跳转至page1
         </button>
-        <Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/page1`}>
-          link跳转至page1
-        </Link>
+        <Link href={`/page1`}>link跳转至page1</Link>
         <button
           onClick={() => {
-            router.push(`${process.env.NEXT_PUBLIC_BASE_URL}/page1`);
+            router.push(`/page1`);
           }}
         >
           router.push page1
         </button>
         <button
           onClick={() => {
-            router.push(`page1`);
+            router.push(`/page1`);
           }}
         >
           不加环境变量router.push page1
@@ -50,7 +48,7 @@ export default function Home() {
 
         <button
           onClick={() => {
-            router.push(`${process.env.NEXT_PUBLIC_BASE_URL}/page1/page1-1`);
+            router.push(`/page1/page1-1`);
           }}
         >
           router.push page1-1
@@ -58,7 +56,7 @@ export default function Home() {
 
         <button
           onClick={() => {
-            router.push(`${process.env.NEXT_PUBLIC_BASE_URL}/page1/page1-2`);
+            router.push(`/page1/page1-2`);
           }}
         >
           router.push page1-2

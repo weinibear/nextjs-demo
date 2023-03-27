@@ -14,7 +14,7 @@ export default function Page2() {
       <h2>page2</h2>
       <button
         onClick={() => {
-          router.replace(`${process.env.NEXT_PUBLIC_BASE_URL}/page1`);
+          router.replace(`/page1`);
         }}
       >
         router.replace到page1
@@ -22,7 +22,7 @@ export default function Page2() {
 
       <button
         onClick={() => {
-          router.replace(`${process.env.NEXT_PUBLIC_BASE_URL}/`);
+          router.replace(`/`);
         }}
       >
         router.replace返回到/
